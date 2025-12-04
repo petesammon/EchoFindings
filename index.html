@@ -147,7 +147,7 @@
             <br><br>
             BNSSG Primary Care Heart Failure Treatment Guideline:
             <a href="https://remedy.bnssg.icb.nhs.uk/media/t1kpgp4m/bnssg-hfguideline-2024.pdf" target="_blank">Click Here</a>
-        </div>
+            </div>
 
         <div class="heading h2" onclick="toggle(this)">
             <span class="arrow">▶</span>Suspected Heart Failure
@@ -286,7 +286,7 @@
                 <b>Clinically stable with incidental finding of change in Ejection Fraction:</b>
                 <div class="block">
                     <span style="color:grey">
-                        No action required unless change in clinical status)
+                        No action required unless change in clinical status
                     </span>
                 </div>
                 <br>
@@ -299,7 +299,8 @@
                     <span style="color:grey">
                         Remedy - Heart Failure page: 
                         <a href="https://remedy.bnssg.icb.nhs.uk/adults/cardiology/heart-failure/" target="_blank">Click Here</a>
-                        <br>(scroll down to “Patients with known heart failure”)
+                        <br>
+                        <i>(scroll down to “Patients with known heart failure”)</i>
                     </span>
                 </div>
             </div>
@@ -429,8 +430,15 @@
     <div class="heading h1" onclick="toggle(this)">
         <span class="arrow">▶</span>Dilated Aorta</div>
         <div class="content h1-content">
-                Please refer to the Remedy - Aortopathy page for full up-to-date guidance:
+            For full up-to-date guidance, please see the following resources:
+            <br>
+            <div class="block">
+                Remedy - Aortopathy page:
                 <a href="https://remedy.bnssg.icb.nhs.uk/adults/cardiology/thoracic-aorta-disease/" target="_blank">Click Here</a>
+                <br><br>
+                BNSSG Clinical Guidelines for the Mangement of Aortic Disease:
+                <a href="https://remedy.bnssg.icb.nhs.uk/media/giwl5joi/cg-for-management-of-aortic-disease-final-nov-2024.docx" target="_blank">Click Here</a>
+            </div>
             
             <div class="heading h2" onclick="toggle(this)">
                 <span class="arrow">▶</span>New Finding of Dilated Aorta
@@ -1027,7 +1035,19 @@
         </div>
         <br><br>
 
-    <script src="main.js"></script>
+    <script>
+    function toggle(element) {
+            const content = element.nextElementSibling;
+            
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                element.classList.remove('active');
+            } else {
+                content.style.display = 'block';
+                element.classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>
 
